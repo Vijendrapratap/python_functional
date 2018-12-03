@@ -2,18 +2,18 @@
 #defining a sorting function
 def insertion_sort(lst):
 
-	#iterating over a
-	for i in a:
-	    j = a.index(i)
+	#iterating over lst
+	for i in lst:
+	    j = lst.index(i)
 
 	    #i is not the first element
 	    while j>0:
 
 		#not in order
-		if a[j-1] > a[j]:
+		if lst[j-1] > lst[j]:
 
 		    #swap
-		    a[j-1],a[j] = a[j],a[j-1]
+		    lst[j-1],lst[j] = lst[j],lst[j-1]
 		else:
 		    #in order
 		    break
