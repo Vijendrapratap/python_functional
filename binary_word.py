@@ -2,7 +2,7 @@
 
 #difining a binary function
 def binarySearch (lst, l, r, w): 
-	
+
 	#sorting our list as we always need a sorted list
 	lst.sort()
 	
@@ -10,7 +10,7 @@ def binarySearch (lst, l, r, w):
 	if r >= l: 
 
 		#finding mid index of our list
-		mid = (r + l)/2
+		mid = (r + l)//2
 
 
 		if lst[mid] == w: 
@@ -31,13 +31,13 @@ def binarySearch (lst, l, r, w):
 
 
 lst = ["a", "quick", "brown","fox", "jumps", "over", "the", "lazy", "dog"] 
-find_word = raw_input("Enter the word you wanna search : ")
+find_word = input("Enter the word you wanna search : ")
 
 # Function call 
 result = binarySearch(lst, 0, len(lst)-1, find_word) 
 
 if result != -1: 
-	print "Element is present at index %d" % result 
+	print("Element is present at index ", result)
 else: 
-	print "Element is not present in list"
+	print("Element is not present in list")
 

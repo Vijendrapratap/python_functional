@@ -23,9 +23,10 @@ def isanagram(n1, n2):
 		print("nope! they are not anagram")
 
 
-#user input for string
-name1 = raw_input("Enter a string : ")
-name2 = raw_input("Enter another string : ")
+if __name__ == '__main__':
+	#user input for string
+	name1 = input("Enter a string : ")
+	name2 = input("Enter another string : ")
 
-#calling our function
-t = isanagram(name1, name2)
+	#calling our function
+	t = isanagram(name1, name2)
